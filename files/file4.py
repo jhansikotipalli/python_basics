@@ -1,0 +1,15 @@
+try:
+    fp=open("file.txt","r")
+    buffer=fp.read()
+    print("file name:",fp.name)
+    print("file mode:",fp.mode)
+    print("file is readable:",fp.readable())
+    print("file is writable:",fp.writable())
+    print("is file closed?:",fp.closed)
+    fp.close()
+    print("is file closed?:",fp.closed)
+    fp=open("sample.txt","a")
+    fp.write(buffer)
+    fp.close()
+except:
+    print("file not found")
