@@ -1,0 +1,17 @@
+L1=[3,1,2,9,10,2]
+L2=[1,2,3,4]
+print(L1)
+print("maximum of a given list:",max(L1))
+print("pop a element:",L1.pop(2))
+print(L1.remove(10))
+print(L1)
+L1.extend(L2)
+print(L1)
+L2.clear()
+print(L2)
+print("length of L1:",len(L1)) 
+L1.append(99)
+print(L1)
+print("minimum of given list:",min(L1))
+print("sum of list:",sum(L1))
+del(L2)
